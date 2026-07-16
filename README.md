@@ -29,6 +29,7 @@ docs/
   GEE_WORKFLOW.md        Google Earth Engine workflow notes
   REPRODUCIBILITY.md     Reproduction workflow and version-control practice
   PORTFOLIO_NOTES.md     Public-release scope
+  PUBLIC_RELEASE_CHECKLIST.md  Checklist for safe public updates
 figures/selected/
   Selected public-facing diagnostics and workflow visuals
 ```
