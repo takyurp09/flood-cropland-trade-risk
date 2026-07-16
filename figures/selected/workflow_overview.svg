@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">Flood cropland and food-trade risk workflow</title>
+  <desc id="desc">A workflow from satellite flood products to cropland exposure, trade propagation, food-security outcomes, validation, and projections.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8f4; }
+      .panel { fill: #ffffff; stroke: #c9cfc7; stroke-width: 2; rx: 10; }
+      .panel2 { fill: #eef4f7; stroke: #9cb8c7; stroke-width: 2; rx: 10; }
+      .title { font: 700 30px Arial, sans-serif; fill: #182026; }
+      .step { font: 700 18px Arial, sans-serif; fill: #182026; }
+      .text { font: 15px Arial, sans-serif; fill: #3c454a; }
+      .small { font: 13px Arial, sans-serif; fill: #586168; }
+      .arrow { stroke: #50656f; stroke-width: 4; marker-end: url(#arrowhead); fill: none; }
+      .tag { fill: #e9efe3; stroke: #a9b99a; stroke-width: 1.5; rx: 14; }
+      .tagtext { font: 700 13px Arial, sans-serif; fill: #3a5132; }
+      .accent1 { fill: #b9493f; }
+      .accent2 { fill: #477f9d; }
+      .accent3 { fill: #d7a64b; }
+      .accent4 { fill: #587a54; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#50656f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1280" height="520"/>
+  <text class="title" x="48" y="58">Flood Cropland and Food-Trade Risk Pipeline</text>
+  <text class="text" x="48" y="88">Public portfolio version: remote sensing, agricultural exposure, trade networks, applied-economics panels, validation, and projections.</text>
+
+  <rect class="panel" x="48" y="132" width="185" height="170"/>
+  <circle class="accent2" cx="92" cy="174" r="20"/>
+  <path d="M74 174 C84 158, 102 158, 112 174 C102 190, 84 190, 74 174 Z" fill="#ffffff" opacity="0.85"/>
+  <text class="step" x="76" y="222">1. Flood Layers</text>
+  <text class="text" x="76" y="248">JRC / GFD / GSW</text>
+  <text class="small" x="76" y="272">Earth Engine aggregation</text>
+
+  <rect class="panel" x="278" y="132" width="185" height="170"/>
+  <rect class="accent4" x="323" y="154" width="50" height="50" rx="6"/>
+  <path d="M323 186 C337 174, 351 194, 373 178 L373 204 L323 204 Z" fill="#dce9d4"/>
+  <text class="step" x="306" y="222">2. Crop Exposure</text>
+  <text class="text" x="306" y="248">Harvested area</text>
+  <text class="small" x="306" y="272">Calendar + yield weights</text>
+
+  <rect class="panel" x="508" y="132" width="185" height="170"/>
+  <circle class="accent3" cx="548" cy="174" r="9"/>
+  <circle class="accent3" cx="608" cy="162" r="9"/>
+  <circle class="accent3" cx="635" cy="202" r="9"/>
+  <path d="M548 174 L608 162 L635 202 L548 174" stroke="#7c6b42" stroke-width="3" fill="none"/>
+  <text class="step" x="536" y="222">3. Trade Network</text>
+  <text class="text" x="536" y="248">BACI bilateral flows</text>
+  <text class="small" x="536" y="272">Import-weighted exposure</text>
+
+  <rect class="panel" x="738" y="132" width="185" height="170"/>
+  <rect class="accent1" x="778" y="156" width="58" height="36" rx="6"/>
+  <rect x="790" y="166" width="34" height="6" fill="#fff4e8"/>
+  <rect x="790" y="178" width="24" height="6" fill="#fff4e8"/>
+  <text class="step" x="766" y="222">4. Risk Panel</text>
+  <text class="text" x="766" y="248">Food balance + climate</text>
+  <text class="small" x="766" y="272">Policy and IPC outcomes</text>
+
+  <rect class="panel2" x="968" y="132" width="185" height="170"/>
+  <path d="M1008 192 L1026 164 L1046 184 L1068 152 L1090 192 Z" fill="none" stroke="#477f9d" stroke-width="5"/>
+  <text class="step" x="996" y="222">5. Validation</text>
+  <text class="text" x="996" y="248">Production + NDVI</text>
+  <text class="small" x="996" y="272">Projection diagnostics</text>
+
+  <path class="arrow" d="M238 218 L270 218"/>
+  <path class="arrow" d="M468 218 L500 218"/>
+  <path class="arrow" d="M698 218 L730 218"/>
+  <path class="arrow" d="M928 218 L960 218"/>
+
+  <rect class="tag" x="112" y="352" width="160" height="34"/>
+  <text class="tagtext" x="134" y="374">Remote sensing</text>
+  <rect class="tag" x="304" y="352" width="148" height="34"/>
+  <text class="tagtext" x="327" y="374">Crop calendars</text>
+  <rect class="tag" x="484" y="352" width="144" height="34"/>
+  <text class="tagtext" x="510" y="374">Trade shocks</text>
+  <rect class="tag" x="660" y="352" width="150" height="34"/>
+  <text class="tagtext" x="683" y="374">Panel models</text>
+  <rect class="tag" x="842" y="352" width="150" height="34"/>
+  <text class="tagtext" x="862" y="374">Robustness</text>
+  <rect class="tag" x="1024" y="352" width="148" height="34"/>
+  <text class="tagtext" x="1050" y="374">Projections</text>
+
+  <text class="small" x="48" y="456">Tracked in GitHub: curated scripts, docs, selected visuals, and reproducibility notes.</text>
+  <text class="small" x="48" y="480">Excluded from GitHub: raw data, provider credentials, private notes, paper submissions, logs, and large generated outputs.</text>
+</svg>

@@ -1,0 +1,15 @@
+pandas
+numpy
+geopandas
+rasterio
+xarray
+netCDF4
+earthengine-api
+requests
+beautifulsoup4
+matplotlib
+seaborn
+statsmodels
+linearmodels
+tqdm
+python-dotenv
