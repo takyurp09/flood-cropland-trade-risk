@@ -1,0 +1,4 @@
+country_iso3,year,kcal_supply_pc_day,flood_trade_exposure,domestic_climate_index,export_restriction_flag,ipc_observed
+DDD,2018,2410,0.0054,0.18,0,1
+EEE,2019,2275,0.0037,-0.05,1,0
+FFF,2020,2560,0.0039,0.22,0,1

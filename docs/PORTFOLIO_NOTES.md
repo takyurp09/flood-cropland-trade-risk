@@ -9,6 +9,7 @@ This is a public, limited-scope portfolio repository. It is meant to show resear
 - Google Earth Engine workflow notes
 - Data-source documentation
 - Selected figures that demonstrate scale and method
+- Illustrative sample tables that show intermediate and analysis-ready data structures
 
 ## Excluded
 
@@ -31,3 +32,4 @@ The repository demonstrates:
 - validation using independent food, crop, and vegetation data;
 - forward-looking climate-risk projection structure;
 - GitHub-ready documentation and version-control hygiene.
+- selective public communication of figures and tables without exposing the full unpublished project.

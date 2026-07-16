@@ -9,6 +9,7 @@ Use this checklist before pushing updates to the public repository.
 - [x] Private manuscript and submission files excluded
 - [x] Debug scripts and internal iteration files excluded
 - [x] Selected figures reviewed for public release
+- [x] Sample tables marked as illustrative, not empirical results
 - [x] Python scripts parse successfully
 - [x] Documentation explains data access limits
 
@@ -16,7 +17,7 @@ Recommended Git workflow:
 
 ```bash
 git status
-git add README.md docs/ scripts/ figures/selected/
+git add README.md docs/ examples/ scripts/ figures/selected/
 git commit -m "Describe the specific update"
 git push
 ```

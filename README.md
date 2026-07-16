@@ -1,16 +1,53 @@
 # Flood Cropland and Food-Trade Risk
 
-This repository contains a public portfolio version of a research pipeline linking satellite-detected flood exposure in crop-producing regions to food-import risk through international trade networks.
+Satellite flood exposure, crop calendars, and trade networks for food-security risk analysis.
 
-The workflow is designed for applied economics, agricultural economics, and climate-risk settings where the empirical object is not only local flood damage, but also how production shocks propagate through commodity markets and import dependence.
+This repository is a public portfolio release of a research pipeline that links flood exposure in crop-producing regions to downstream food-import risk. It is designed for agricultural economics, remote sensing, and climate-risk applications where local production shocks may propagate through commodity trade networks.
 
-## Research Workflow
+## What This Demonstrates
 
-1. Construct flood cropland exposure from Earth observation products and harvested-area weights.
-2. Harmonize crop calendars, crop groups, and country-year panels.
-3. Build bilateral food-trade exposure measures using BACI trade flows.
-4. Merge flood-trade exposure with food-balance, climate, policy, and food-security outcomes.
-5. Run panel regressions, robustness checks, validation exercises, and forward-looking risk projections.
+This project is meant to show research-computing ability in a policy-relevant agricultural monitoring setting:
+
+- Google Earth Engine and satellite flood products;
+- crop-calendar and harvested-area exposure construction;
+- country-crop-year panel data engineering;
+- BACI bilateral trade network processing;
+- food-security, climate, policy, and validation data integration;
+- reproducible R/Python-style project organization and Git workflow.
+
+## Workflow
+
+![Workflow overview](figures/selected/workflow_overview.svg)
+
+| Stage | Data product | Main scripts |
+|---|---|---|
+| 1. Satellite flood exposure | Flood cropland exposure by country, crop, and year | `scripts/phase1_flood/` |
+| 2. Trade propagation | Import-weighted flood trade exposure | `scripts/phase2_trade/` |
+| 3. Outcome panel | Food-balance, climate, policy, and exposure panel | `scripts/phase3_outcome/`, `scripts/phase3_panel/` |
+| 4. Validation | Production, vegetation, and food-security checks | `scripts/phase4_validation/`, `scripts/phase4_ipc/` |
+| 5. Projection inputs | Forward-looking caloric-risk exposure workflow | `scripts/phase5_projection/`, `scripts/phase5_projections/` |
+
+## Selected Visuals
+
+The public release includes a small set of selected visuals to show scale and workflow structure without releasing raw data or full manuscript outputs.
+
+![Global flood-trade exposure map](figures/selected/global_flood_trade_exposure_map.png)
+
+![Sensor crosswalk diagnostic](figures/selected/sensor_crosswalk_diagnostic.png)
+
+See `docs/VISUAL_GALLERY.md` for figure notes and what each public visual is intended to demonstrate.
+
+## Example Data Products
+
+The repository includes small illustrative schema tables in `examples/`. These are not empirical results; they show the expected shape of intermediate products.
+
+| Example file | Purpose |
+|---|---|
+| `examples/sample_flood_cropland_exposure.csv` | Country-crop-year flood cropland exposure structure |
+| `examples/sample_flood_trade_exposure.csv` | Import-weighted trade exposure structure |
+| `examples/sample_regression_panel_schema.csv` | Final panel schema for applied-economics analysis |
+
+See `docs/SAMPLE_TABLES.md` for a readable version.
 
 ## Repository Structure
 
@@ -27,31 +64,41 @@ scripts/
 docs/
   DATA_SOURCES.md        Data provenance and access notes
   GEE_WORKFLOW.md        Google Earth Engine workflow notes
-  REPRODUCIBILITY.md     Reproduction workflow and version-control practice
-  PORTFOLIO_NOTES.md     Public-release scope
-  PUBLIC_RELEASE_CHECKLIST.md  Checklist for safe public updates
+  METHOD_OVERVIEW.md     High-level empirical and data-engineering design
+  REPRODUCIBILITY.md     Environment and run-order notes
+  SAMPLE_TABLES.md       Illustrative non-sensitive data-product tables
+  VISUAL_GALLERY.md      Notes on selected public visuals
+examples/
+  Small illustrative CSV schemas
 figures/selected/
-  Selected public-facing diagnostics and workflow visuals
+  Selected public-facing maps and diagnostics
 ```
-
-## Selected Visuals
-
-![Global flood-trade exposure map](figures/selected/global_flood_trade_exposure_map.png)
-
-![Portfolio workflow](figures/selected/workflow_overview.svg)
-
-## Data Availability
-
-Raw data are not included. The pipeline relies on public or access-controlled sources such as Google Earth Engine flood products, MapSPAM harvested area, crop calendars, ISIMIP, BACI, FAO Food Balance Sheets, ERA5, ENSO indices, Global Trade Alert, IPC, USDA PSD, and FAO GIEWS.
-
-See `docs/DATA_SOURCES.md` for details.
 
 ## Reproducibility
 
-This public version is intended to demonstrate coding style, project organization, geospatial processing, and version-control practice. Some scripts require registered API access or manually downloaded data.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-See `docs/REPRODUCIBILITY.md` for environment setup and execution order.
+The public repository is not a turnkey replication package because the workflow depends on large or access-controlled data sources. Raw data, private credentials, logs, manuscript files, and full generated outputs are intentionally excluded.
+
+See `docs/REPRODUCIBILITY.md` for the suggested run order and `docs/DATA_SOURCES.md` for data-access notes.
 
 ## Public-Release Scope
 
-This repository excludes raw data, unpublished manuscript files, private research notes, local logs, private tokens, and full thesis outputs. Selected figures are included only to document workflow scale and coding capability.
+Included:
+
+- curated source scripts;
+- project documentation;
+- selected public-facing visuals;
+- illustrative sample table schemas;
+- reproducibility and data-access notes.
+
+Excluded:
+
+- raw satellite, trade, climate, and food-security data;
+- private API credentials and local paths;
+- unpublished manuscript files and submission packages;
+- full empirical result tables.

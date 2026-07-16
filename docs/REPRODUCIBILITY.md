@@ -43,6 +43,12 @@ The repository is intended to demonstrate good version-control hygiene:
 - the public release is organized into interpretable commits;
 - local paths and private tokens are excluded from committed files.
 
+## Public Example Outputs
+
+The `examples/` directory contains small illustrative CSV schemas for the major data products. These files are intentionally synthetic and are provided so reviewers can see column names, units, and data-flow expectations without exposing unpublished empirical results.
+
+The `figures/selected/` directory contains a curated set of public visuals. See `docs/VISUAL_GALLERY.md` for figure notes.
+
 ## Expected Non-Reproducible Elements
 
 Some outputs cannot be regenerated without external data access, data-provider credentials, or large local downloads. This is documented intentionally rather than hidden.
