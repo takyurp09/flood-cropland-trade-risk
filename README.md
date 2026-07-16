@@ -39,13 +39,13 @@ See `docs/VISUAL_GALLERY.md` for figure notes and what each public visual is int
 
 ## Example Data Products
 
-The repository includes small illustrative schema tables in `examples/`. These are not empirical results; they show the expected shape of intermediate products.
+The repository includes small real-data extracts in `examples/`. These are limited documentation samples, not a full replication dataset or final empirical result tables.
 
 | Example file | Purpose |
 |---|---|
-| `examples/sample_flood_cropland_exposure.csv` | Country-crop-year flood cropland exposure structure |
-| `examples/sample_flood_trade_exposure.csv` | Import-weighted trade exposure structure |
-| `examples/sample_regression_panel_schema.csv` | Final panel schema for applied-economics analysis |
+| `examples/sample_flood_cropland_exposure.csv` | Exporter-crop-year flood cropland exposure extract |
+| `examples/sample_flood_trade_exposure.csv` | Importer-crop-year trade exposure extract |
+| `examples/sample_regression_panel_schema.csv` | Selected country-year fields for applied-economics analysis |
 
 See `docs/SAMPLE_TABLES.md` for a readable version.
 

@@ -45,7 +45,7 @@ The repository is intended to demonstrate good version-control hygiene:
 
 ## Public Example Outputs
 
-The `examples/` directory contains small illustrative CSV schemas for the major data products. These files are intentionally synthetic and are provided so reviewers can see column names, units, and data-flow expectations without exposing unpublished empirical results.
+The `examples/` directory contains small real-data extracts from processed intermediate products. These files are intentionally limited to a few rows so reviewers can see column names, units, and data-flow expectations without receiving the full unpublished dataset or result tables.
 
 The `figures/selected/` directory contains a curated set of public visuals. See `docs/VISUAL_GALLERY.md` for figure notes.
 

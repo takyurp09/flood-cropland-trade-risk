@@ -9,7 +9,7 @@ Use this checklist before pushing updates to the public repository.
 - [x] Private manuscript and submission files excluded
 - [x] Debug scripts and internal iteration files excluded
 - [x] Selected figures reviewed for public release
-- [x] Sample tables marked as illustrative, not empirical results
+- [x] Sample tables limited to small real-data extracts, not full result tables
 - [x] Python scripts parse successfully
 - [x] Documentation explains data access limits
 

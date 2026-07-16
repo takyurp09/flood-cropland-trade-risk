@@ -1,4 +1,4 @@
-exporter_iso3,crop,year,flooded_cropland_km2,harvested_area_km2,exposure_share,sensor_source
-AAA,rice,2018,125.4,9810.0,0.0128,JRC_GFD
-BBB,wheat,2019,74.2,6230.0,0.0119,JRC_GSW
-CCC,maize,2020,211.8,14520.0,0.0146,JRC_GFD
+exporter_iso3,crop,year,fce_low_km2,fce_central_km2,fce_high_km2,harvested_area_ha,plant_month,harvest_month,flooded_cropland_km2
+CHN,wheat,2018,1762.1,2517.3,3272.4,31050072.5,3,7,12856.5
+IND,rice,2018,628.0,897.2,1166.3,6529105.5,6,11,15332.0
+USA,maize,2018,57.5,82.1,106.7,1334175.2,5,10,6809.6
