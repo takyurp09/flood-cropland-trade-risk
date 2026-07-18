@@ -1,8 +1,23 @@
 # Flood Cropland and Food-Trade Risk
 
+[![Status: Under Review](https://img.shields.io/badge/status-under%20review-1f6f8b)](#research-status)
+[![Python](https://img.shields.io/badge/Python-geospatial%20pipeline-3776AB?logo=python&logoColor=white)](scripts/)
+[![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-flood%20exposure-4285F4)](docs/GEE_WORKFLOW.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+**Muhammad Taky Tahmid**
+
+This repository is the public research companion to:
+
+> Tahmid, M. T. (2026). *Flood Shocks, Trade Networks, and Import Exposure Risk: Evidence from a Global Food Panel, 2000-2021*. Under review at *Environment and Development Economics*.
+
 Satellite flood exposure, crop calendars, and trade networks for food-security risk analysis.
 
 This repository is a public portfolio release of a research pipeline that links flood exposure in crop-producing regions to downstream food-import risk. It is designed for agricultural economics, remote sensing, and climate-risk applications where local production shocks may propagate through commodity trade networks.
+
+## Research Question
+
+How do satellite-observed flood shocks in crop-producing regions propagate through bilateral food-trade networks, and which importing countries are most exposed to production risk abroad?
 
 ## What This Demonstrates
 
@@ -86,6 +101,10 @@ The public repository is not a turnkey replication package because the workflow 
 
 See `docs/REPRODUCIBILITY.md` for the suggested run order and `docs/DATA_SOURCES.md` for data-access notes.
 
+## Research Status
+
+The associated manuscript is under review at *Environment and Development Economics*. The repository contains selected public workflows, schemas, and visuals rather than the complete submission or replication package.
+
 ## Public-Release Scope
 
 Included:
@@ -102,3 +121,13 @@ Excluded:
 - private API credentials and local paths;
 - unpublished manuscript files and submission packages;
 - full empirical result tables.
+
+## Citation and Contact
+
+Please cite the manuscript:
+
+> Tahmid, M. T. (2026). *Flood Shocks, Trade Networks, and Import Exposure Risk: Evidence from a Global Food Panel, 2000-2021*. Under review at *Environment and Development Economics*.
+
+Muhammad Taky Tahmid<br>
+University of Delaware<br>
+[tahmid@udel.edu](mailto:tahmid@udel.edu)

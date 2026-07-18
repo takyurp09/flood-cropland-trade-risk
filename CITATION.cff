@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript associated with this repository."
+title: "Flood Shocks, Trade Networks, and Import Exposure Risk: Evidence from a Global Food Panel, 2000-2021"
+type: software
+authors:
+  - family-names: Tahmid
+    given-names: Muhammad Taky
+year: 2026
+license: MIT
+repository-code: "https://github.com/takyurp09/flood-cropland-trade-risk"
